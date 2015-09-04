@@ -129,6 +129,12 @@ Like Blade's escaped echo `{{` `}}` the markdown tags are also equipped with the
 {% $variable or 'default' %}
 ```
 
+If you are using a JavaScript template engine which uses the markdown "curly" braces, ust like Blade's "curly" braces, you may add a leading `@` to leave it untouched for the JavaScript template engine.
+
+```php
+@{% javascript stuff %}
+```
+
 #### Views Extensions
 If the `views` configuration is set to `true`.  You may use views with the following extensions: `*.md`, `*.md.php`, and `*.md.blade.php`.  The `*.md` views will parse the markdown and return the html equivalent, while the `*.md.php`, and `*.md.blade.php` will parse the php first and followed by the markdown.
 

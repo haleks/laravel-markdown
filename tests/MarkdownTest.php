@@ -29,6 +29,17 @@ class MarkdownTest extends MarkdownTestCase
     /**
      * @test
      */
+    public function it_can_ignore_markdown_tags()
+    {
+        $actual = $this->app['view']->make('stubs::ignore')->render();
+        $expected = "{% javascript %}\n<p>text</p>\n";
+
+        $this->assertSame($expected, $actual);
+    }
+
+    /**
+     * @test
+     */
     public function it_can_compile_markdown_files()
     {
         $actual = $this->app['view']->make('stubs::markdown')->render();
@@ -62,7 +73,7 @@ class MarkdownTest extends MarkdownTestCase
     /**
      * @test
      */
-    public function test_markdown_extension()
+    public function it_can_compile_markdown_extension()
     {
         $actual = $this->app['view']->make('stubs::extension')->render();
         $expected = "<h1 id=\"id\">title</h1>\n<h2 class=\"class\" id=\"id\">subtitle</h2>\n<p class=\"class\">text</p>\n";

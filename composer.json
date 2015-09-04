@@ -1,0 +1,45 @@
+{
+    "name": "haleks/laravel-markdown",
+    "description": "Laravel Markdown integrate markdown 'curly' braces inside the blade template engine, adding view extension and also giving the possibility of extending CommonMark.",
+    "keywords": ["laravel", "framework", "markdown", "commonmark", "common mark", "laravel markdown", "laravel-markdown", "haleks", "Alex Villeneuve", "AlexVilleneuve", "Alexandre Villeneuve", "AlexandreVilleneuve", "haleksandre"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexandre Villeneuve",
+            "email": "haleksviller@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/contracts": "5.0.*|5.1.*",
+        "illuminate/support": "5.0.*|5.1.*",
+        "illuminate/view": "5.0.*|5.1.*",
+        "league/commonmark": "0.10.*"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.4",
+        "phpunit/phpunit": "^4.7.6",
+        "orchestra/testbench": "~3.0",
+        "webuni/commonmark-attributes-extension": "^0.1.0@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Haleks\\Markdown\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Haleks\\Tests\\Markdown\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

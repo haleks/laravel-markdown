@@ -1,11 +1,17 @@
-# [Haleks](https://haleks.ca) — Laravel Markdown
+<p align="center">
+<a href="https://haleks.ca" target="_blank"><img src="https://haleks.ca/images/logo/haleks[markdown-orange].png" alt="haleks logo"></a>
+</p>
+
+<h1 align="center">
+Laravel Markdown
+<br>
+<a href="https://travis-ci.org/haleks/laravel-markdown" target="_blank"><img src="https://img.shields.io/travis/haleks/laravel-markdown/master.svg?style=flat-square" alt="travic ci"></a>
+<a href="https://github.com/haleks/laravel-markdown/releases" target="_blank"><img src="https://img.shields.io/github/release/haleks/laravel-markdown.svg?style=flat-square" alt="latest release"></a>
+<a href="https://codeclimate.com/github/haleks/laravel-markdown" target="_blank"><img src="https://img.shields.io/codeclimate/github/haleks/laravel-markdown.svg?style=flat-square" alt="code climate"></a>
+<a href="LISCENCE" target="_blank"><img src="https://img.shields.io/badge/license-MIT-ff4c00.svg?style=flat-square" alt="liscense"></a>
+</h1>
 
 Laravel Markdown integrate markdown "curly" braces inside the blade template engine, also giving the possibility of extending CommonMark.
-
-<a href="https://travis-ci.org/haleks/laravel-markdown/"><img src="https://img.shields.io/travis/haleks/laravel-markdown/master.svg?style=flat-square" alt="Build Status">
-<a href="https://github.com/haleks/laravel-markdown/releases"><img src="https://img.shields.io/github/release/haleks/laravel-markdown.svg?style=flat-square" alt="Latest Version"></img></a>
-<a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Software License"></img></a>
-
 
 ## Documentation
 

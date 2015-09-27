@@ -42,7 +42,6 @@ class MarkdownServiceProvider extends ServiceProvider
         $this->registerMarkdownHtmlRenderer();
         $this->registerMarkdown();
         $this->registerEngines();
-
     }
 
     /**
@@ -50,7 +49,7 @@ class MarkdownServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function registerMarkdownEnvironment()
+    protected function registerMarkdownEnvironment()
     {
         $app = $this->app;
 
@@ -75,7 +74,7 @@ class MarkdownServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function registerMarkdownParser()
+    protected function registerMarkdownParser()
     {
         $app = $this->app;
 
@@ -93,7 +92,7 @@ class MarkdownServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function registerMarkdownHtmlRenderer()
+    protected function registerMarkdownHtmlRenderer()
     {
         $app = $this->app;
 
@@ -111,7 +110,7 @@ class MarkdownServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function registerMarkdown()
+    protected function registerMarkdown()
     {
         $app = $this->app;
 
@@ -127,7 +126,7 @@ class MarkdownServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function registerEngines()
+    protected function registerEngines()
     {
         $app = $this->app;
         $config = $app['config'];
@@ -149,7 +148,7 @@ class MarkdownServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function registerBladeEngine($resolver)
+    protected function registerBladeEngine($resolver)
     {
         $app = $this->app;
 
@@ -169,7 +168,7 @@ class MarkdownServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function registerMarkdownEngine($resolver)
+    protected function registerMarkdownEngine($resolver)
     {
         $app = $this->app;
 
@@ -191,7 +190,7 @@ class MarkdownServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function registerMarkdownPhpEngine($resolver)
+    protected function registerMarkdownPhpEngine($resolver)
     {
         $app = $this->app;
 
@@ -213,7 +212,7 @@ class MarkdownServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function registerMarkdownBladeEngine($resolver)
+    protected function registerMarkdownBladeEngine($resolver)
     {
         $app = $this->app;
 

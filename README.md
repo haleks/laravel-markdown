@@ -135,7 +135,7 @@ Like Blade's escaped echo `{{` `}}` the markdown tags are also equipped with the
 {% $variable or 'default' %}
 ```
 
-If you are using a JavaScript template engine which uses the markdown "curly" braces, ust like Blade's "curly" braces, you may add a leading `@` to leave it untouched for the JavaScript template engine.
+If you are using a JavaScript template engine which uses the markdown "curly" braces, just like Blade's "curly" braces, you may add a leading `@` to leave it untouched for the JavaScript template engine.
 
 ```php
 @{% javascript stuff %}

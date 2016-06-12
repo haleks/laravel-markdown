@@ -34,7 +34,27 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Enable Markdown Extensions
+    | Include CommonMark Configuration
+    |--------------------------------------------------------------------------
+    |
+    | This option specifies the configuration options for the CommonMark
+    | converter. The following configuration will affect how CommonMark will
+    | parse your markdown.
+    |
+    | For more info on the possible configuration options:
+    | http://commonmark.thephpleague.com/configuration/
+    |
+    | Default: none
+    |
+    */
+
+    'configurations' => [
+        //
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Include CommonMark Extensions
     |--------------------------------------------------------------------------
     |
     | This option specifies the extensions to add to the CommonMark converter.

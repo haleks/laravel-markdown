@@ -80,4 +80,15 @@ class MarkdownTest extends MarkdownTestCase
 
         $this->assertSame($expected, $actual);
     }
+
+    /**
+     * @test
+     */
+    public function it_can_compile_configured_markdown()
+    {
+        $actual = $this->app['view']->make('stubs::config')->render();
+        $expected = "<h1>*title*</h1>\n<h2>subtitle</h2>\n<p>text</p>\n";
+
+        $this->assertSame($expected, $actual);
+    }
 }

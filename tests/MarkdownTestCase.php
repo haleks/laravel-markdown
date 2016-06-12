@@ -6,17 +6,16 @@ use Orchestra\Testbench\TestCase;
 
 abstract class MarkdownTestCase extends TestCase
 {
-    protected function resolveApplicationConfiguration($app)
-    {
-        parent::resolveApplicationConfiguration($app);
-
-        $app['config']['markdown.extensions'] = [
-            \Webuni\CommonMark\AttributesExtension\AttributesExtension::class,
-        ];
-    }
-
     protected function getEnvironmentSetUp($app)
     {
+        $app['config']->set('markdown.configurations', [
+            'enable_em' => false,
+        ]);
+
+        $app['config']->set('markdown.extensions', [
+            \Webuni\CommonMark\AttributesExtension\AttributesExtension::class,
+        ]);
+
         $app['view']->addNamespace('stubs', realpath(__DIR__.'/stubs'));
     }
 

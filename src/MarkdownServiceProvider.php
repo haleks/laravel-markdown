@@ -57,6 +57,10 @@ class MarkdownServiceProvider extends ServiceProvider
             $config = $app['config']['markdown'];
             $environment = Environment::createCommonMarkEnvironment();
 
+            if ($config['configurations']) {
+                $environment->mergeConfig($config['configurations']);
+            }
+
             foreach ($config['extensions'] as $extension) {
                 if (class_exists($extension)) {
                     $environment->addExtension(new $extension());

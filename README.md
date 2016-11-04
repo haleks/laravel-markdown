@@ -42,7 +42,7 @@ Install via your projects' `composer.json`:
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.1.*",
-        "haleks/laravel-markdown": "0.1.*"
+        "haleks/laravel-markdown": "0.3.*"
     },
     ...
 }

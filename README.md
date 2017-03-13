@@ -13,6 +13,10 @@ Laravel Markdown
 
 Laravel Markdown integrate markdown "curly" braces inside the blade template engine, also giving the possibility of extending CommonMark.
 
+## Abandoned
+
+Abandoned in favor of the more flexible [Writedown](https://github.com/haleks/writedown). Which add supports for multiple markdown parsers.
+
 ## Documentation
 
 ### Pre-Installation
@@ -20,7 +24,7 @@ This project requires that the following packages be formerly installed.
 
 [PHP](https://php.net) 5.5+ / [HHVM](http://hhvm.com) 3.6+
 
-[Composer](https://github.com/composer/composer)  
+[Composer](https://github.com/composer/composer)
 ```bash
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer

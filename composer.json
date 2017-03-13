@@ -40,6 +40,9 @@
             "dev-master": "0.3-dev"
         }
     },
+    "suggest": {
+        "haleks/writedown": "Abandoned in favor of the more flexible Writedown package. Which add support for multiple markdown parsers."
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
